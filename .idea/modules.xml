@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FetchServerUtil.iml" filepath="$PROJECT_DIR$/FetchServerUtil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fetchserver-util/fetchserver-util.iml" filepath="$PROJECT_DIR$/fetchserver-util/fetchserver-util.iml" />
+    </modules>
+  </component>
+</project>

@@ -31,6 +31,7 @@ public class FetchServer {
     private Activity context;
     private int readTimeout = 15000;
     private int connectTimeout = 15000;
+    private int fetchTimeInterval = 200;
     private OnFetchListener onFetchListener;
 
     public FetchServer(Activity context) {
@@ -43,6 +44,7 @@ public class FetchServer {
 
     public interface OnFetchListener {
         void onPreExecute();
+
         void onPostExecute(String result);
     }
 
@@ -56,6 +58,10 @@ public class FetchServer {
 
     public void setLoadRealtime(boolean loadRealtime) {
         this.loadRealtime = loadRealtime;
+    }
+
+    public void setFetchTimeInterval(int fetchTimeInterval) {
+        this.fetchTimeInterval = fetchTimeInterval;
     }
 
     public void execute() {
@@ -138,14 +144,14 @@ public class FetchServer {
                     onFetchListener.onPostExecute("");
                 }
             }
-            if (loadRealtime){
+            if (loadRealtime) {
                 final Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         new loadurl().execute();
                     }
-                }, 200);
+                }, fetchTimeInterval);
             }
         }
     }

@@ -12,7 +12,7 @@ Add below code to the root build.gradle at the end of repositories:
 Add the dependency
     
     dependencies {
-	        compile 'com.github.Abhishekpalodath:FetchServerUtil-Android:0.1.2'
+	        compile 'com.github.Abhishekpalodath:FetchServerUtil-Android:1.0.0'
 	  }
 
 Initialize fetch server

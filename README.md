@@ -1,6 +1,6 @@
 # FetchServerUtil-Android
-Android library for easily fetch data from server.
-Add it in your root build.gradle at the end of repositories:
+Android library that fetches data from the server.
+Add below code to the root build.gradle at the end of repositories:
 
     allprojects {
 		    repositories {
@@ -15,11 +15,11 @@ Add the dependency
 	        compile 'com.github.Abhishekpalodath:FetchServerUtil-Android:0.1.2'
 	  }
 
-Initialise FetchServer
+Initialize fetch server
 
     FetchServer fetchServer = new FetchServer(this);
     
-Set url of php or html file that you want to load.
+Load the desired php/html code using setUrl method.
 
     fetchServer.setUrl("https://something.php");
 

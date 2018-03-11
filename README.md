@@ -23,8 +23,8 @@ Load the desired php/html code using setUrl method.
 
     fetchServer.setUrl("https://something.php");
 
-You can add onPreExecute and onPostExecute listeners.
-
+Add onPreexute listener for pre execution of data and onpost listener fetches out the loaded data from the url
+    
     fetchServer.setOnFetchListener(new FetchServer.OnFetchListener() {
             @Override
             public void onPreExecute() {
@@ -36,8 +36,8 @@ You can add onPreExecute and onPostExecute listeners.
                 ...
             }
         });
-  
-Start loading using the code
+  
+execut() loads the given url.
 
     fetchServer.execute();
     
@@ -45,8 +45,6 @@ You can set data to be posted into the php file by using-
 
     fetchServer.setPostDataParams("key","value");
     
-Also you can load realtime data from server by using
+Also you can load realtime data from server.
 
     fetchServer.setLoadRealtime(true);
-    
-Which is actually continues fetching of given url.

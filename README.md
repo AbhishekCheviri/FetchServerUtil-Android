@@ -1,5 +1,5 @@
 # FetchServerUtil-Android
-Android library that fetches data from the server.
+An Android library that simplifies Requesting and Fetching of data from the server.
 Add below code to the root build.gradle at the end of repositories:
 
     allprojects {
